@@ -1,6 +1,6 @@
 name: lemon_widgets
 description: A utility library for creating flutter application
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/Jerome-Saltmarsh/dart_lemon_widgets
 
 environment:
