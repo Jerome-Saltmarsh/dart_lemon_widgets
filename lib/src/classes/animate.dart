@@ -1,12 +1,13 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:lemon_widgets/src/typedefs/animate_builder.dart';
 
 class Animate extends StatefulWidget {
 
   final Widget? child;
   final Duration duration;
-  final Widget Function(BuildContext context, Widget? child, double value) builder;
+  final AnimateBuilder builder;
   final Animation<double> Function(AnimationController controller) buildAnimation;
 
   const Animate({

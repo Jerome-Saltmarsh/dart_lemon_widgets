@@ -1,15 +1,14 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:lemon_widgets/lemon_widgets.dart';
 
 import 'animate.dart';
-
-/// Flutter code sample for [AnimatedBuilder].
 
 class AnimateCurved extends StatelessWidget {
 
   final Curve curve;
-  final Widget Function(BuildContext context, Widget? child, double value) builder;
+  final AnimateBuilder builder;
 
   const AnimateCurved({
     super.key,

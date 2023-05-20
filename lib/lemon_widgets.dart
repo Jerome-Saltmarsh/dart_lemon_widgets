@@ -8,3 +8,4 @@ export 'src/classes/fade_in.dart';
 export 'src/classes/on_pressed.dart';
 export 'src/enums/side.dart';
 export 'src/functions/interpolate.dart';
+export 'src/typedefs/animate_builder.dart';

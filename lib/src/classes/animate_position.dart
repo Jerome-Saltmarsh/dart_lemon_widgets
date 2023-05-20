@@ -13,6 +13,7 @@ class AnimatePosition extends StatelessWidget {
   final double endX;
   final double endY;
   final Side side;
+  final Curve curve;
 
   const AnimatePosition({
     super.key,
@@ -22,13 +23,13 @@ class AnimatePosition extends StatelessWidget {
     this.startY = 0,
     this.endX = 0,
     this.endY = 0,
+    this.curve = Curves.easeInOutQuad,
   });
 
   @override
   Widget build(BuildContext context) => AnimateCurved(
-        curve: Curves.easeOut,
+        curve: curve,
         builder: (context, child, value) {
-
           switch (side) {
             case Side.top:
               return Positioned(
@@ -36,7 +37,7 @@ class AnimatePosition extends StatelessWidget {
               );
             case Side.right:
               return Positioned(
-                right: interpolate(startX, endY, value), child: this.child,
+                right: interpolate(startX, endX, value), child: this.child,
               );
             case Side.bottom:
               return Positioned(
